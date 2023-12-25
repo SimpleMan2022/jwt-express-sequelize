@@ -1,0 +1,27 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6ImFkaXRudWdyb2hvIiwiZW1haWwiOiJhZGl0QGdtYWlsLmNvbSIsImlhdCI6MTcwMjY0NDM1NSwiZXhwIjoxNzAyNjQ0Mzc1fQ.fgX1HuzCFUGFGkyjQoQUPi5zq-ePEl9ymycBMNr30OQ
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+  "name": "aditgroho",
+  "email": "adist@gmail.com",
+  "password": "12345",
+  "confirm": "12345"
+}
+###
+POST http://localhost:5000/login
+Content-Type: application/json  
+
+{
+ "email": "adit@gmail.com",
+ "password": "12345"
+}
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE  http://localhost:5000/logout
